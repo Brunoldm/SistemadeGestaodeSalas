@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblTitulo = new System.Windows.Forms.Label();
             this.DgvSalas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSalas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LblTitulo
-            // 
-            this.LblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblTitulo.AutoSize = true;
-            this.LblTitulo.BackColor = System.Drawing.Color.DarkGray;
-            this.LblTitulo.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitulo.Location = new System.Drawing.Point(20, 20);
-            this.LblTitulo.Name = "LblTitulo";
-            this.LblTitulo.Size = new System.Drawing.Size(168, 32);
-            this.LblTitulo.TabIndex = 2;
-            this.LblTitulo.Text = "Listar Salas";
-            this.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DgvSalas
             // 
@@ -70,19 +55,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(718, 674);
-            this.Controls.Add(this.LblTitulo);
             this.Controls.Add(this.DgvSalas);
             this.Name = "FormListarSala";
             this.Text = "FormListarSala";
+            this.Load += new System.EventHandler(this.FormListarSala_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvSalas)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.DataGridView DgvSalas;
     }
 }

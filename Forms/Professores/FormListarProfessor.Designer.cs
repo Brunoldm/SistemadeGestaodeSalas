@@ -43,7 +43,6 @@
             this.DgvProfessores.Size = new System.Drawing.Size(718, 674);
             this.DgvProfessores.TabIndex = 0;
             this.DgvProfessores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProfessores_CellContentClick);
-            this.DgvProfessores.AutoGenerateColumns = true;
             // 
             // FormListarProfessor
             // 
@@ -54,6 +53,7 @@
             this.Controls.Add(this.DgvProfessores);
             this.Name = "FormListarProfessor";
             this.Text = "FormListarProfessor";
+            this.Load += new System.EventHandler(this.FormListarProfessor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvProfessores)).EndInit();
             this.ResumeLayout(false);
 

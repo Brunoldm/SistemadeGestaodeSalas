@@ -12,7 +12,7 @@ namespace SistemadeGestãodeSalas.Data
     {
 
         /// Método para obter a conexão com o banco de dados.
-        /// <returns>Instância de SqlConnection.</returns>
+
         public static SqlConnection GetConnection()
         {
             // String de conexão para o banco de dados.

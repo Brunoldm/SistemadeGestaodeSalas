@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblTitulo = new System.Windows.Forms.Label();
             this.DgvReservas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReservas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LblTitulo
-            // 
-            this.LblTitulo.AutoSize = true;
-            this.LblTitulo.BackColor = System.Drawing.Color.DarkGray;
-            this.LblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblTitulo.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.LblTitulo.Name = "LblTitulo";
-            this.LblTitulo.Size = new System.Drawing.Size(168, 32);
-            this.LblTitulo.TabIndex = 3;
-            this.LblTitulo.Text = "Listar Salas";
-            this.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblTitulo.Click += new System.EventHandler(this.LblTitulo_Click);
             // 
             // DgvReservas
             // 
@@ -70,19 +55,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(718, 674);
-            this.Controls.Add(this.LblTitulo);
             this.Controls.Add(this.DgvReservas);
             this.Name = "FormListarReservas";
             this.Text = "FormListarReservas";
+            this.Load += new System.EventHandler(this.FormListarReservas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvReservas)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.DataGridView DgvReservas;
     }
 }

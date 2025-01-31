@@ -40,7 +40,7 @@ namespace SistemadeGestãodeSalas
             Button btn = sender as Button;
             if (btn != null)
             {
-                btn.BackColor = Color.LightBlue; // Cor ao passar o mouse
+                btn.BackColor = Color.LightBlue; 
             }
         }
         private void Btn_MouseLeave(object sender, EventArgs e)

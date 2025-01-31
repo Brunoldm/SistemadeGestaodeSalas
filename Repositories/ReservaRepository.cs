@@ -53,7 +53,7 @@ namespace SistemadeGestaoDeSalas.Repositories
 
             using (SqlConnection connection = Conexao.GetConnection())
             {
-                string query = "SELECT Codigo, ProfessorCodigo, SalaCodigo, DataReserva, HoraInicio, HoraFim FROM Reservas";
+                string query = "SELECT Codigo, CodigoProfessor, CodigoSala, DataReserva, HoraInicio, HoraFim FROM Reservas";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
